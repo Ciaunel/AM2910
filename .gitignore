@@ -1,0 +1,27 @@
+# Vivado generated folders
+*.jou
+*.log
+*.str
+*.webtalk
+*.xpr
+*.runs/
+*.cache/
+*.hw/
+*.sim/
+*.ip_user_files/
+*.Xil/
+*.backup
+*.tmp
+*.vcd
+*.wdb
+
+# Folders you cleaned out
+AM2910.cache/
+AM2910.hw/
+AM2910.ip_user_files/
+AM2910.sim/
+AM2910.srcs/
+
+# OS files
+.DS_Store
+Thumbs.db
