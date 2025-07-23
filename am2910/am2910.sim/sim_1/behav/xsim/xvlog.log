@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/AM2910/rtl/am2910.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module am2910
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/AM2910/rtl/incrementer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module incrementer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/AM2910/rtl/instruction_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/AM2910/rtl/microprogram_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module microprogram_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/AM2910/rtl/mux_4_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/AM2910/rtl/register_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/AM2910/rtl/stack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stack
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/AM2910/sim/tb_am2910.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_am2910
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/AM2910/am2910/am2910.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
