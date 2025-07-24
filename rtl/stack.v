@@ -4,13 +4,13 @@ module stack (
     input  push_en,
     input  pop_en,
     input  clear_en,
-    input  [11:0] data_in,
-    output [11:0] data_out,
+    input  [3:0] data_in,
+    output [3:0] data_out,
     output full,
     output empty
 );
 
-    reg [11:0] stack_mem [0:4];
+    reg [3:0] stack_mem [0:4];
     reg [2:0]  stack_pointer;
 
     always @(posedge clk or negedge reset_n) begin

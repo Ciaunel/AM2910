@@ -1,8 +1,8 @@
 module microprogram_counter (
     input clk,
     input reset_n,
-    input [11:0] next_pc_in,
-    output reg [11:0] pc_out
+    input [3:0] next_pc_in,
+    output reg [3:0] pc_out
 );
 
     always @(posedge clk or negedge reset_n) begin

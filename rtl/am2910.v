@@ -1,40 +1,38 @@
-
 module am2910 (
-    input CP,
-    input RESET_N,
-    input [3:0] I,
-    input [3:0] D_in_4bit,
-    input CC,
-    input CCEN,
-    input RLD,
-    input CI,
-    input OE,
-    output FULL,
-    output PL,
-    output MAP,
-    output VECT,
-    output [11:0] Y
+    input             CP,
+    input             RESET_N,
+    input [3:0]       I,
+    input [3:0]       D,
+    input             CC,
+    input             CCEN,
+    input             RLD,
+    
+    output            FULL,
+    output            PL,
+    output            MAP,
+    output            VECT,
+    output [3:0]      Y
 );
 
-   
-    wire [11:0] D ;
-    assign D = {8'b00000000, D_in_4bit};
-    wire [2:0]  w_mux_sel;
-    wire w_stack_op_push;
-    wire w_stack_op_pop;
-    wire w_stack_op_clear;
-    wire w_r_op_load;
-    wire w_r_op_dec;
+    wire CI = 1'b1;
+    wire OE = 1'b0;
 
-    wire [11:0] w_upc_out;
-    wire [11:0] w_r_out;
-    wire [11:0] w_f_out;
-    reg  [11:0] w_mux_out;
-    wire [11:0] w_upc_next;
+    wire [2:0]  w_mux_sel;
+    wire        w_stack_op_push;
+    wire        w_stack_op_pop;
+    wire        w_stack_op_clear;
+    wire        w_r_op_load;
+    wire        w_r_op_dec;
+
+    wire [3:0]  w_upc_out;
+    wire [3:0]  w_r_out;
+    wire [3:0]  w_f_out;
+    reg  [3:0]  w_mux_out;
+    wire [3:0]  w_upc_next;
     
-    wire w_r_is_zero;
-    wire w_test_passed;
-    wire w_stack_full;
+    wire        w_r_is_zero;
+    wire        w_test_passed;
+    wire        w_stack_full;
 
     assign w_test_passed = (~CCEN & ~CC) | CCEN;
 
@@ -44,14 +42,14 @@ module am2910 (
             3'b001:  w_mux_out = w_f_out;
             3'b010:  w_mux_out = D;
             3'b011:  w_mux_out = w_r_out;
-            3'b100:  w_mux_out = 12'h000;
-            default: w_mux_out = 12'h000;
+            3'b100:  w_mux_out = 4'h0;
+            default: w_mux_out = 4'h0;
         endcase
     end
 
     assign w_upc_next = w_mux_out + CI;
     
-    assign Y = (~OE) ? w_mux_out : 12'hZZZ;
+    assign Y = (~OE) ? w_mux_out : 4'hZ;
     assign FULL = ~w_stack_full;
 
     instruction_decoder decoder (
