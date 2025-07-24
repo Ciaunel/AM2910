@@ -7,7 +7,7 @@ module microprogram_counter (
 
     always @(posedge clk or negedge reset_n) begin
         if (!reset_n) begin
-            pc_out <= 12'b000000000000;
+            pc_out <= 4'h0;
         end else begin
             pc_out <= next_pc_in;
         end

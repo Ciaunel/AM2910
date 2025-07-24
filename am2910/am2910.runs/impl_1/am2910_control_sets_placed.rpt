@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Thu Jul 24 17:29:52 2025
+| Date         : Thu Jul 24 17:44:10 2025
 | Host         : ayvictus running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file am2910_control_sets_placed.rpt
 | Design       : am2910
@@ -74,10 +74,10 @@ Table of Contents
 |  Clock Signal |            Enable Signal           | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +---------------+------------------------------------+------------------+------------------+----------------+--------------+
 |  CP_IBUF_BUFG | stack_file/stack_mem[3][3]_i_1_n_0 |                  |                1 |              4 |         4.00 |
-|  CP_IBUF_BUFG | stack_file/stack_mem[1][3]_i_1_n_0 |                  |                1 |              4 |         4.00 |
-|  CP_IBUF_BUFG | stack_file/stack_mem[4][3]_i_1_n_0 |                  |                1 |              4 |         4.00 |
-|  CP_IBUF_BUFG | stack_file/stack_mem[2][3]_i_1_n_0 |                  |                1 |              4 |         4.00 |
 |  CP_IBUF_BUFG | stack_file/stack_mem[0][3]_i_1_n_0 |                  |                1 |              4 |         4.00 |
+|  CP_IBUF_BUFG | stack_file/stack_mem[1][3]_i_1_n_0 |                  |                1 |              4 |         4.00 |
+|  CP_IBUF_BUFG | stack_file/stack_mem[2][3]_i_1_n_0 |                  |                1 |              4 |         4.00 |
+|  CP_IBUF_BUFG | stack_file/stack_mem[4][3]_i_1_n_0 |                  |                1 |              4 |         4.00 |
 |  CP_IBUF_BUFG |                                    | r_reg/RESET_N    |                2 |              7 |         3.50 |
 |  CP_IBUF_BUFG | r_reg/data_out[11]_i_1_n_0         | r_reg/RESET_N    |                3 |             12 |         4.00 |
 +---------------+------------------------------------+------------------+------------------+----------------+--------------+

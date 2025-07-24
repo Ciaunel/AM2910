@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date             : Thu Jul 24 17:30:05 2025
+| Date             : Thu Jul 24 17:44:23 2025
 | Host             : ayvictus running 64-bit major release  (build 9200)
 | Command          : report_power -file am2910_power_routed.rpt -pb am2910_power_summary_routed.pb -rpx am2910_power_routed.rpx
 | Design           : am2910
