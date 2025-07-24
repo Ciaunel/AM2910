@@ -2,7 +2,7 @@ module instruction_decoder (
     input [3:0]  I,
     input test_passed,
     input R_is_zero,
-    output reg [1:0] mux_sel,
+    output reg [2:0] mux_sel,
     output reg stack_op_push,
     output reg stack_op_pop,
     output reg stack_op_clear,
@@ -17,7 +17,7 @@ module instruction_decoder (
                JRP=4'b0111, RFCT=4'b1000, RPCT=4'b1001, CRTN=4'b1010, CJPP=4'b1011, LDCT=4'b1100, 
                LOOP=4'b1101, CONT=4'b1110, TWB=4'b1111;
                
-    localparam MUX_SEL_PC = 2'b00, MUX_SEL_F = 2'b01, MUX_SEL_D = 2'b10, MUX_SEL_R = 2'b11;
+    localparam MUX_SEL_PC = 3'b000, MUX_SEL_F = 3'b001, MUX_SEL_D = 3'b010, MUX_SEL_R = 3'b011, MUX_SEL_ZERO = 3'b100;
 
     always @(*) begin
         mux_sel = MUX_SEL_PC;
@@ -26,7 +26,7 @@ module instruction_decoder (
         pl_en = 1'b1; map_en = 1'b1; vect_en = 1'b1;
 
         case (I)
-            JZ:   begin mux_sel = MUX_SEL_D; stack_op_clear = 1'b1; pl_en = 1'b0; end
+            JZ:   begin mux_sel = MUX_SEL_ZERO; stack_op_clear = 1'b1; pl_en = 1'b0; end
             CJS:  begin if(test_passed) begin mux_sel = MUX_SEL_D; stack_op_push = 1'b1; end else begin mux_sel = MUX_SEL_PC; end pl_en = 1'b0; end
             JMAP: begin mux_sel = MUX_SEL_D; map_en = 1'b0; end
             CJP:  begin mux_sel = test_passed ? MUX_SEL_D : MUX_SEL_PC; pl_en = 1'b0; end

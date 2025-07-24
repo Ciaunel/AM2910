@@ -3,11 +3,12 @@
 May 22 2025
 00:13:55
 D:/AMD/AM2910/am2910/am2910.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
-D:/AMD/AM2910/rtl/am2910.v,1753254334,verilog,,D:/AMD/AM2910/rtl/incrementer.v,,am2910,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/AMD/AM2910/rtl/am2910.v,1753280614,verilog,,D:/AMD/AM2910/rtl/instruction_decoder.v,,am2910,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
 D:/AMD/AM2910/rtl/incrementer.v,1753252873,verilog,,D:/AMD/AM2910/rtl/instruction_decoder.v,,incrementer,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
 D:/AMD/AM2910/rtl/instruction_decoder.v,1753106002,verilog,,D:/AMD/AM2910/rtl/microprogram_counter.v,,instruction_decoder,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
-D:/AMD/AM2910/rtl/microprogram_counter.v,1753077340,verilog,,D:/AMD/AM2910/rtl/mux_4_to_1.v,,microprogram_counter,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/AMD/AM2910/rtl/microprogram_counter.v,1753077340,verilog,,D:/AMD/AM2910/rtl/register_counter.v,,microprogram_counter,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
 D:/AMD/AM2910/rtl/mux_4_to_1.v,1753252662,verilog,,D:/AMD/AM2910/rtl/register_counter.v,,mux_4_to_1,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
 D:/AMD/AM2910/rtl/register_counter.v,1753077021,verilog,,D:/AMD/AM2910/rtl/stack.v,,register_counter,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
 D:/AMD/AM2910/rtl/stack.v,1753077249,verilog,,D:/AMD/AM2910/sim/tb_am2910.v,,stack,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
 D:/AMD/AM2910/sim/tb_am2910.v,1753254509,verilog,,,,tb_am2910,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/AMD/AM2910/sim/tb_stack.v,1753278932,verilog,,,,tb_stack,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
